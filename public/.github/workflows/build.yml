@@ -1,0 +1,14 @@
+name: build workflow
+on: push
+jobs:
+    first-job:
+        runs-on:ubuntu-latest
+        steps:
+            -name:first step
+            run:npm run lint
+            -name:second step
+            run:npm run test
+            -name:third step
+            run:npm run build
+
+            
