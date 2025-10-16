@@ -4,6 +4,8 @@ jobs:
     first-job:
         runs-on: ubuntu-latest
         steps:
+        - name: Install dependencies
+          run: npm ci
         - name: first step
           run: npm run lint
         - name: second step
